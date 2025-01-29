@@ -1,3 +1,5 @@
+import About from "./sections/About"
+import Contact from "./sections/Contact"
 import Hero from "./sections/Hero"
 import Navbar from "./sections/Navbar"
 
@@ -6,6 +8,8 @@ function App() {
     <div className="text-white">
       <Navbar />
       <Hero />
+      <About />
+      <Contact />
     </div>
   </main>
 
