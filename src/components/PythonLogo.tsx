@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { useFrame } from '@react-three/fiber';
 import React from 'react';
 
-export function PythonLogo(props: any) {
+const PythonLogo = (props: any) => {
   const { nodes, materials } = useGLTF('/models/python.glb')
 
   const pythonMaterial = materials.Python as THREE.MeshStandardMaterial;
@@ -43,3 +43,4 @@ export function PythonLogo(props: any) {
 }
 
 useGLTF.preload('/models/python.glb')
+export default PythonLogo

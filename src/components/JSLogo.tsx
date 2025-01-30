@@ -2,7 +2,7 @@
 import { Float, useGLTF } from '@react-three/drei'
 import * as THREE from 'three'
 
-export function JSLogo(props:any) {
+const JSLogo = (props:any) => {
   const { nodes, materials } = useGLTF('/models/javascript_1.glb')
   return (
     <Float floatIntensity={0.1}>
@@ -20,3 +20,5 @@ export function JSLogo(props:any) {
 }
 
 useGLTF.preload('/modles/javascript_1.glb')
+
+export default JSLogo

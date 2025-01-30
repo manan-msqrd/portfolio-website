@@ -25,29 +25,27 @@ const Contact = () => {
         setLoading(true);
 
         try {
-            await emailjs.send("service_l2xldx7", 
-                "template_j36unew",
+            await emailjs.send(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID, 
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
                 {
-                    from_name:form.name,
+                    from_name: form.name,
                     to_name: 'Manan',
                     from_email: form.email,
-                    to_email: 'mananmanchanda+portfolio@gmail.com',
+                    to_email: import.meta.env.VITE_TO_EMAIL,
                     message: form.message
-                    
                 },
-                "3IlXzsPe3xObbzDBP"
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
             )
-
+    
             setLoading(false);
-            
             alert("Your message has been sent!")
-
             setForm({
                 name:'',
                 email:'',
                 message:''
             })
-
+    
         } catch (error) {
             setLoading(false);
             console.log(error)

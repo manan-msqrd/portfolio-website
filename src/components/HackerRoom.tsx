@@ -44,7 +44,7 @@ interface HackerRoomGLTF {
     };
 }
 
-export function HackerRoom(props: GroupProps) {
+const HackerRoom = (props: GroupProps) => {
     const { nodes, materials } = useGLTF('/models/hacker-room.glb') as unknown as HackerRoomGLTF;
 
     const monitortxt = useTexture('textures/desk/monitor.png');
@@ -77,3 +77,5 @@ export function HackerRoom(props: GroupProps) {
 }
 
 useGLTF.preload('/models/hacker-room.glb');
+
+export default HackerRoom

@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import { useRef } from 'react';
 import * as THREE from 'three';
 
-export function GitHubLogo(props:any) {
+const GitHubLogo = (props:any) => {
   const { nodes, materials } = useGLTF('/models/3d_github_logo.glb')
   const targetRef = useRef<any>(null);
 
@@ -46,3 +46,4 @@ export function GitHubLogo(props:any) {
 }
 
 useGLTF.preload('/models/3d_github_logo.glb')
+export default GitHubLogo
