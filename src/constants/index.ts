@@ -258,7 +258,7 @@ export const navLinks = [
       reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [4, 3.5, 0] : isTablet ? [6, 3, 0] : [10, 3, 0],
 
       pythonLogoScale: isSmall ? 0.45 : isMobile ? 0.6 : 1,
-      pythonLogoPosition: isSmall ? [-3, 6.75, 0] : isMobile ? [-4.2, 7.5, 0] : isTablet ? [-8, 8, 0] : [-12, 8, 0],
+      pythonLogoPosition: isSmall ? [-3, 6.75, 0] : isMobile ? [-4.2, 7.5, 0] : isTablet ? [-8, 8, 0] : [-11, 8, 0],
 
       gitLogoScale: isSmall ? 0.4 : isMobile ? 0.45 : 1,
       gitLogoPosition: isSmall ? [-2.8, -4.5, -1] : isMobile ? [-4, -5, 2] : isTablet ? [-11, -8, -10] : [-14, -9, -10],
