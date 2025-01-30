@@ -14,7 +14,7 @@ import Button from "../components/Button"
 
 
 
-const Hero = () => {
+const Hero = ({ sectionRefs }: { sectionRefs: Record<string, React.RefObject<HTMLDivElement>> }) => {
 
     const isSmall = useMediaQuery({maxWidth:480})
     const isMobile = useMediaQuery({maxWidth:768})
@@ -22,6 +22,9 @@ const Hero = () => {
 
     const sizes = calculateSizes(Number(isSmall), Number(isMobile), Number(isTablet));
 
+    const handleContactScroll = () => {
+        sectionRefs.contact?.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
   return (
     <section className="min-h-screen w-full flex flex-col relative">
@@ -57,10 +60,12 @@ const Hero = () => {
         </div>
 
         <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-            <a href='#contact' className="w-fit">
-                <Button name="Let's work together" isBeam containerClass="sm:w-fit w-full sm:max-w-56"/>
-            </a>
-
+        <Button 
+            name="Let's work together" 
+            isBeam 
+            containerClass="sm:w-fit w-full sm:max-w-56"
+            onClick={handleContactScroll}
+        />
         </div>
     </section>
   )

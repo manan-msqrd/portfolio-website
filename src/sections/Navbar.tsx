@@ -2,16 +2,22 @@ import { useState } from "react"
 import { navLinks } from "../constants"
 
 
-const NavItems = () => {
+const NavItems = ({ sectionRefs }: { sectionRefs: Record<string, React.RefObject<HTMLDivElement>> }) => {
+
+    const handleScroll = (id: string) => {
+        console.log(sectionRefs)
+        sectionRefs[id]?.current?.scrollIntoView({ behavior: "smooth" });
+      };
+
   return (
     <div>
         <ul className="nav-ul">
             {
                 navLinks.map(({id, name, href}) => (
                     <li key={id} className="nav-li">
-                        <a href={href} onClick={() => {}} className="nav-li_a">
+                        <button onClick={() => handleScroll(href)} className="nav-li_a cursor-pointer">
                             {name}
-                        </a>
+                        </button>
                     </li>
                 ))
             }
@@ -21,7 +27,7 @@ const NavItems = () => {
 }
 
 
-const Navbar = () => {
+const Navbar = ({ sectionRefs }: { sectionRefs: Record<string, React.RefObject<HTMLDivElement>> }) => {
 
     const [isOpen, setIsOpen] = useState<boolean>(false)
 
@@ -41,13 +47,13 @@ const Navbar = () => {
                 </button>
 
                 <nav className="sm:flex hidden">
-                    <NavItems />
+                    <NavItems sectionRefs={sectionRefs} />
                 </nav>
             </div>
         </div>
         <div className={`nav-sidebar ${isOpen ? 'max-h-screen' : 'max-h-0'}`}>
             <nav className="p-5">
-                <NavItems />
+                <NavItems sectionRefs={sectionRefs} />
             </nav>
 
         </div>

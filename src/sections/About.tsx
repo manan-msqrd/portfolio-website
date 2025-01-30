@@ -2,7 +2,7 @@ import Globe from "react-globe.gl"
 import Button from "../components/Button"
 import { useState } from "react"
 
-const About = () => {
+const About = ({ sectionRefs }: { sectionRefs: Record<string, React.RefObject<HTMLDivElement>> }) => {
 
     const [hasCopied, setHasCopied] = useState<boolean>(false)
 
@@ -15,6 +15,10 @@ const About = () => {
             setHasCopied(false);
         }, 2000)
     }
+
+    const handleContactScroll = () => {
+        sectionRefs.contact?.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
   return (
     <section className="c-space my-20">
@@ -65,7 +69,7 @@ const About = () => {
                     <div>
                         <p className="grid-headtext">Working remotely over many timezones</p>
                         <p className="grid-subtext">I'm based in India and open for remote work.</p>
-                        <Button name="Let's Connect!" isBeam containerClass="w-full mt-10"></Button>
+                        <Button name="Let's Connect!" isBeam containerClass="w-full mt-10" onClick={handleContactScroll}></Button>
                     </div>
                 </div>
             </div>
