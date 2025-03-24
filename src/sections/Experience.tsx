@@ -15,7 +15,7 @@ const Experience = () => {
             <h3 className="head-text">My Work Experience</h3>
 
             <div className="work-container">
-                <div className="work-canvas">
+                <div className="work-canvas hidden sm:block">
                     <Canvas>
                         <ambientLight intensity={5}/>
                         <spotLight position={[10,10,10]} angle={0.15} penumbra={1}/>
@@ -23,7 +23,7 @@ const Experience = () => {
                         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI/2}/>
 
                         <Suspense fallback={<CanvasLoader />}>
-                            <Developer position-y={-3} scale={3} animationName={animation}/>
+                            <Developer rotation={[0.2,0.5,0]} position-y={-3} scale={2.5} animationName={animation}/>
                         </Suspense>
                     </Canvas>
 

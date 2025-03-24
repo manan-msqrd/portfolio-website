@@ -11,10 +11,13 @@ function App() {
   const aboutRef = useRef<HTMLDivElement>(null);
   const workRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+
 
   const sectionRefs = {
     home: homeRef,
     about: aboutRef,
+    projects: projectsRef,
     work: workRef,
     contact: contactRef,
   };
