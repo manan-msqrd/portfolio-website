@@ -5,6 +5,7 @@ import Experience from "./sections/Experience"
 import Footer from "./sections/Footer"
 import Hero from "./sections/Hero"
 import Navbar from "./sections/Navbar"
+import Projects from "./sections/Projects"
 
 function App() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -28,6 +29,7 @@ function App() {
         <Navbar sectionRefs={sectionRefs} />
         <section ref={homeRef}> <Hero sectionRefs={sectionRefs} /></section>
         <section ref={aboutRef}><About sectionRefs={sectionRefs}/></section>
+        <section ref={projectsRef}><Projects /></section>
         <section ref={workRef}><Experience /></section>
         <section ref={contactRef}><Contact /></section>
         <Footer />

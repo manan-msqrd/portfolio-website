@@ -11,11 +11,16 @@ export const navLinks = [
     },
     {
       id: 3,
+      name: 'Projects',
+      href: 'projects',
+    },
+    {
+      id: 4,
       name: 'Work',
       href: 'work',
     },
     {
-      id: 4,
+      id: 5,
       name: 'Contact',
       href: 'contact',
     },
@@ -58,15 +63,15 @@ export const navLinks = [
   
   export const myProjects = [
     {
-      title: 'Gemini AI Clone',
-      desc: 'Leveraging the Gemini API with important features like chat, chat history, and formatted markdown output. Engineered advanced state management using React Context with intuitive prompt suggestions, animated loaders, and adaptive UI elements to ensure high performance and enhanced user experience.',
+      title: 'Forever - E-Commerce Platform',
+      desc: 'Includes product management features with CRUD operations, search, filtering, and sorting, leveraging Context API for eﬃcient state management. Created RESTful APIs using Express.js for user and admin and optimized MongoDB queries for fast performance, handling large datasets eﬃciently.',
       subdesc:
-        'Built with React.js, Tailwind CSS, TypeScript, and Gemini API',
-      href: 'https://gemini-clone-manan.vercel.app',
-      texture: '/textures/project/project1.mp4',
-      logo: '/assets/project-logo1.png',
+        'A full-stack platform built using TypeScript, MERN stack, and Tailwind CSS, featuring secure user authentication with JWT and bcrypt.',
+      href: 'https://e-commerce-frontend-black-ten.vercel.app',
+      texture: '/textures/project/ecomm.png',
+      logo: '/assets/ecomm-logo.png',
       logoStyle: {
-        backgroundColor: '#2A1816',
+        backgroundColor: '#f5dfdf',
         border: '0.2px solid #36201D',
         boxShadow: '0px 0px 60px 0px #AA3C304D',
       },
@@ -79,66 +84,71 @@ export const navLinks = [
         },
         {
           id: 2,
+          name: 'Node.js',
+          path: '/assets/nodejs-logo.png',
+        },
+        {
+          id: 3,
+          name: 'MongoDB',
+          path: '/assets/mongodb-logo.png',
+        },
+        {
+          id: 4,
           name: 'TailwindCSS',
           path: 'assets/tailwindcss.png',
         },
         {
-          id: 3,
+          id: 5,
           name: 'TypeScript',
           path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        }
       ],
     },
+    // {
+    //   title: 'LiveDoc - Real-Time Google Docs Clone',
+    //   desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+    //   subdesc:
+    //     'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
+    //   href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
+    //   texture: '/textures/project/spotify.png',
+    //   logo: '/assets/project-logo2.png',
+    //   logoStyle: {
+    //     backgroundColor: '#13202F',
+    //     border: '0.2px solid #17293E',
+    //     boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    //   },
+    //   spotlight: '/assets/spotlight2.png',
+    //   tags: [
+    //     {
+    //       id: 1,
+    //       name: 'React.js',
+    //       path: '/assets/react.svg',
+    //     },
+    //     {
+    //       id: 2,
+    //       name: 'TailwindCSS',
+    //       path: 'assets/tailwindcss.png',
+    //     },
+    //     {
+    //       id: 3,
+    //       name: 'TypeScript',
+    //       path: '/assets/typescript.png',
+    //     },
+    //     {
+    //       id: 4,
+    //       name: 'Framer Motion',
+    //       path: '/assets/framer.png',
+    //     },
+    //   ],
+    // },
     {
-      title: 'LiveDoc - Real-Time Google Docs Clone',
-      desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
+      title: 'Spotify Frontend Clone',
+      desc: "Recreated Spotify’s dark-themed, responsive UI using React.js, showcasing advanced component-based design.Implemented smooth navigation and dynamic interface elements using state management and Context API.",
       subdesc:
-        'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-      href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-      texture: '/textures/project/project2.mp4',
-      logo: '/assets/project-logo2.png',
-      logoStyle: {
-        backgroundColor: '#13202F',
-        border: '0.2px solid #17293E',
-        boxShadow: '0px 0px 60px 0px #2F6DB54D',
-      },
-      spotlight: '/assets/spotlight2.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
-    },
-    {
-      title: 'CarePulse - Health Management System',
-      desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-      subdesc:
-        'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-      href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-      texture: '/textures/project/project3.mp4',
-      logo: '/assets/project-logo3.png',
+        'Built with React.js, Tailwind CSS, TypeScript.',
+      href: 'https://spotify-frontend-clone-react-app.vercel.app',
+      texture: '/textures/project/spotify.png',
+      logo: '/assets/spotify-logo.png',
       logoStyle: {
         backgroundColor: '#60f5a1',
         background:
@@ -162,58 +172,53 @@ export const navLinks = [
           id: 3,
           name: 'TypeScript',
           path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        }
       ],
     },
+    // {
+    //   title: 'Horizon - Online Banking Platform',
+    //   desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+    //   subdesc:
+    //     'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
+    //   href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
+    //   texture: '/textures/project/project4.mp4',
+    //   logo: '/assets/project-logo4.png',
+    //   logoStyle: {
+    //     backgroundColor: '#0E1F38',
+    //     border: '0.2px solid #0E2D58',
+    //     boxShadow: '0px 0px 60px 0px #2F67B64D',
+    //   },
+    //   spotlight: '/assets/spotlight4.png',
+    //   tags: [
+    //     {
+    //       id: 1,
+    //       name: 'React.js',
+    //       path: '/assets/react.svg',
+    //     },
+    //     {
+    //       id: 2,
+    //       name: 'TailwindCSS',
+    //       path: 'assets/tailwindcss.png',
+    //     },
+    //     {
+    //       id: 3,
+    //       name: 'TypeScript',
+    //       path: '/assets/typescript.png',
+    //     },
+    //     {
+    //       id: 4,
+    //       name: 'Framer Motion',
+    //       path: '/assets/framer.png',
+    //     },
+    //   ],
+    // },
     {
-      title: 'Horizon - Online Banking Platform',
-      desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
+      title: 'Gemini AI Clone',
+      desc: 'Leveraging the Gemini API with important features like chat, chat history, and formatted markdown output. Engineered advanced state management using React Context with intuitive prompt suggestions, animated loaders, and adaptive UI elements to ensure high performance and enhanced user experience.',
       subdesc:
-        'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-      href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-      texture: '/textures/project/project4.mp4',
-      logo: '/assets/project-logo4.png',
-      logoStyle: {
-        backgroundColor: '#0E1F38',
-        border: '0.2px solid #0E2D58',
-        boxShadow: '0px 0px 60px 0px #2F67B64D',
-      },
-      spotlight: '/assets/spotlight4.png',
-      tags: [
-        {
-          id: 1,
-          name: 'React.js',
-          path: '/assets/react.svg',
-        },
-        {
-          id: 2,
-          name: 'TailwindCSS',
-          path: 'assets/tailwindcss.png',
-        },
-        {
-          id: 3,
-          name: 'TypeScript',
-          path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
-      ],
-    },
-    {
-      title: 'Imaginify - AI Photo Manipulation App',
-      desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-      subdesc:
-        'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
-      href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-      texture: '/textures/project/project5.mp4',
+        'Built with React.js, Tailwind CSS, TypeScript, and Gemini API',
+      href: 'https://gemini-clone-manan.vercel.app',
+      texture: '/textures/project/gemini.png',
       logo: '/assets/project-logo5.png',
       logoStyle: {
         backgroundColor: '#1C1A43',
@@ -236,12 +241,7 @@ export const navLinks = [
           id: 3,
           name: 'TypeScript',
           path: '/assets/typescript.png',
-        },
-        {
-          id: 4,
-          name: 'Framer Motion',
-          path: '/assets/framer.png',
-        },
+        }
       ],
     },
   ];
