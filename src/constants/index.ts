@@ -270,9 +270,9 @@ export const navLinks = [
       id: 1,
       name: 'Deevia Software',
       pos: 'Full Stack Developer',
-      duration: 'Dec 2023 - Present',
+      duration: 'Dec 2023 - Apr 2025',
       contributions: [
-        "Designed and implemented 3 scalable backend systems using Node.js & Express.js.",
+        "Designed and implemented 3 scalable backend systems using Python, Flask and Express.js.",
         "Integrated WebSocket-based live camera feeds, reducing 12 hours of manual work daily.",
         "Optimized system performance with async processing, cutting latency by 30%.",
         "Developed role-based authentication using JWT, securing access for 100+ users.",
