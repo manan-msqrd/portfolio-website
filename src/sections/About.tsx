@@ -30,7 +30,7 @@ const About = ({ sectionRefs }: { sectionRefs: Record<string, React.RefObject<HT
 
                     <div>
                         <p className="grid-headtext">Hi, I'm Manan</p>
-                        <p className="grid-subtext">With 2 years of experience, I've honed my skills as a backend and frontend developer by building practical applications.</p>
+                        <p className="grid-subtext">With 2 years of experience, I've honed my skills as a Gen AI and Full Stack Developer by building practical personal and enterprise applications.</p>
                     </div>
                 </div>
             </ div>
@@ -41,7 +41,7 @@ const About = ({ sectionRefs }: { sectionRefs: Record<string, React.RefObject<HT
 
                     <div>
                         <p className="grid-headtext">Tech Stack</p>
-                        <p className="grid-subtext">I specialise in MERN and also have good knowledge of Python/Flask applications and SQL databases like PostgreSQL.</p>
+                        <p className="grid-subtext">I specialise in MERN apps, Gen AI apps and also have good knowledge of Python/Flask applications and SQL databases like PostgreSQL and MongoDB.</p>
                     </div>
                 </div>
             </div>
@@ -67,8 +67,8 @@ const About = ({ sectionRefs }: { sectionRefs: Record<string, React.RefObject<HT
                         />
                     </div>
                     <div>
-                        <p className="grid-headtext">Working remotely over many timezones</p>
-                        <p className="grid-subtext">I'm based in India and open for remote work.</p>
+                        <p className="grid-headtext">Open to working remotely over different timezones</p>
+                        <p className="grid-subtext">I'm based out of India 🖥️.</p>
                         <Button name="Let's Connect!" isBeam containerClass="w-full mt-10" onClick={handleContactScroll}></Button>
                     </div>
                 </div>
