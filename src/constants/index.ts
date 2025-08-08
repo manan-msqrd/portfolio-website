@@ -63,6 +63,48 @@ export const navLinks = [
   
   export const myProjects = [
     {
+      title: 'Vocaline.ai',
+      desc: 'Vocaline.ai is a powerful, game-changing, no-code AI platform that empowers you to build custom AI voice calling agents in minutes. Whether you need an agent for lead generation, marketing, sales, customer support, or any other business function over a phone call,',
+      subdesc:
+        'Built with Next.js, Express.js, Langchain and custom RAG pipeline',
+      href: 'https://www.vocaline.ai',
+      texture: '/textures/project/vocaline.png',
+      logo: '/assets/vocaline.ai-logo.png',
+      logoStyle: {
+        backgroundColor: '#13202F',
+        border: '0.2px solid #17293E',
+        boxShadow: '0px 0px 60px 0px #2F6DB54D',
+      },
+      spotlight: '/assets/spotlight5.png',
+      tags: [
+        {
+          id: 1,
+          name: 'Next.js',
+          path: '/assets/nextjs.png',
+        },
+        {
+          id: 2,
+          name: 'Langchain',
+          path: 'assets/langchain.png',
+        },
+        {
+          id: 3,
+          name: 'Node.js',
+          path: '/assets/nodejs-logo.png',
+        },
+        {
+          id: 4,
+          name: 'TypeScript',
+          path: '/assets/typescript.png',
+        },
+        {
+          id: 5,
+          name: 'Framer Motion',
+          path: '/assets/framer.png',
+        },
+      ],
+    },
+    {
       title: 'Forever - E-Commerce Platform',
       desc: 'Includes product management features with CRUD operations, search, filtering, and sorting, leveraging Context API for eﬃcient state management. Created RESTful APIs using Express.js for user and admin and optimized MongoDB queries for fast performance, handling large datasets eﬃciently.',
       subdesc:
@@ -104,43 +146,6 @@ export const navLinks = [
         }
       ],
     },
-    // {
-    //   title: 'LiveDoc - Real-Time Google Docs Clone',
-    //   desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    //   subdesc:
-    //     'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    //   href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    //   texture: '/textures/project/spotify.png',
-    //   logo: '/assets/project-logo2.png',
-    //   logoStyle: {
-    //     backgroundColor: '#13202F',
-    //     border: '0.2px solid #17293E',
-    //     boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    //   },
-    //   spotlight: '/assets/spotlight2.png',
-    //   tags: [
-    //     {
-    //       id: 1,
-    //       name: 'React.js',
-    //       path: '/assets/react.svg',
-    //     },
-    //     {
-    //       id: 2,
-    //       name: 'TailwindCSS',
-    //       path: 'assets/tailwindcss.png',
-    //     },
-    //     {
-    //       id: 3,
-    //       name: 'TypeScript',
-    //       path: '/assets/typescript.png',
-    //     },
-    //     {
-    //       id: 4,
-    //       name: 'Framer Motion',
-    //       path: '/assets/framer.png',
-    //     },
-    //   ],
-    // },
     {
       title: 'Spotify Frontend Clone',
       desc: "Recreated Spotify’s dark-themed, responsive UI using React.js, showcasing advanced component-based design.Implemented smooth navigation and dynamic interface elements using state management and Context API.",
@@ -225,7 +230,7 @@ export const navLinks = [
         border: '0.2px solid #252262',
         boxShadow: '0px 0px 60px 0px #635BFF4D',
       },
-      spotlight: '/assets/spotlight5.png',
+      spotlight: '/assets/spotlight2.png',
       tags: [
         {
           id: 1,
@@ -268,6 +273,19 @@ export const navLinks = [
   export const workExperiences = [
     {
       id: 1,
+      name: 'Nanoheal',
+      pos: 'Full Stack Developer',
+      duration: 'Jul 2025 - Present',
+      contributions: [
+        "Developing enterprise-grade web app (similar to daily.dev) with AI-powered features, including automatic post summarization and a ChatGPT-like conversational interface with contextual awareness using vector databases.",
+        "Engineering Google Drive and OneDrive integrations to automatically fetch and ingest files into the vector database via the app’s content crawler, enabling AI to retrieve and respond using document-based context.",
+        "Collaborated with cross-functional teams in an Agile environment, contributing to feature planning, sprint reviews, and code optimization for scalability and maintainability.",
+      ],
+      icon: '/assets/nanoheal_logo.jpeg',
+      animation: 'victory',
+    },
+    {
+      id: 2,
       name: 'Deevia Software',
       pos: 'Full Stack Developer',
       duration: 'Dec 2023 - Apr 2025',
@@ -281,7 +299,7 @@ export const navLinks = [
       animation: 'victory',
     },
     {
-      id: 2,
+      id: 3,
       name: 'IBM',
       pos: 'Backend Developer Intern',
       duration: 'Jan 2023 - Jul 2023',
@@ -295,7 +313,7 @@ export const navLinks = [
       animation: 'clapping',
     },
     {
-      id: 3,
+      id: 4,
       name: 'Tata Consultancy Service (TCS)',
       pos: 'Web Developer Summer Intern',
       duration: 'Jun 2022 - Aug 2022',
