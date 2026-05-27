@@ -63,6 +63,48 @@ export const navLinks = [
   
   export const myProjects = [
     {
+      title: 'Mellow UI',
+      desc: 'Mellow UI is a motion-led React component library with editorial aesthetics — copy-paste primitives via the shadcn CLI with no package to install. Features animated text, canvas backgrounds, interactive buttons, and kinetic displays, all built with reduced-motion support and theme-aware styling.',
+      subdesc:
+        'Built with Next.js 15, React 19, TypeScript, motion/react, and Tailwind CSS',
+      href: 'https://www.mellowui.com',
+      texture: '/textures/project/mellowui.png',
+      logo: '/assets/mellow-ui-logo.svg',
+      logoStyle: {
+        backgroundColor: '#050505',
+        border: '0.2px solid rgba(244, 241, 236, 0.12)',
+        boxShadow: '0px 0px 60px 0px rgba(244, 241, 236, 0.15)',
+      },
+      spotlight: '/assets/spotlight4.png',
+      tags: [
+        {
+          id: 1,
+          name: 'Next.js',
+          path: '/assets/nextjs.png',
+        },
+        {
+          id: 2,
+          name: 'React.js',
+          path: '/assets/react.svg',
+        },
+        {
+          id: 3,
+          name: 'TypeScript',
+          path: '/assets/typescript.png',
+        },
+        {
+          id: 4,
+          name: 'TailwindCSS',
+          path: 'assets/tailwindcss.png',
+        },
+        {
+          id: 5,
+          name: 'Framer Motion',
+          path: '/assets/framer.png',
+        },
+      ],
+    },
+    {
       title: 'Vocaline.ai',
       desc: 'Vocaline.ai is a powerful, game-changing, no-code AI platform that empowers you to build custom AI voice calling agents in minutes. Whether you need an agent for lead generation, marketing, sales, customer support, or any other business function over a phone call,',
       subdesc:
@@ -277,9 +319,10 @@ export const navLinks = [
       pos: 'Full Stack Developer',
       duration: 'Jul 2025 - Present',
       contributions: [
-        "Developing enterprise-grade web app (similar to daily.dev) with AI-powered features, including automatic post summarization and a ChatGPT-like conversational interface with contextual awareness using vector databases.",
-        "Engineering Google Drive and OneDrive integrations to automatically fetch and ingest files into the vector database via the app’s content crawler, enabling AI to retrieve and respond using document-based context.",
-        "Collaborated with cross-functional teams in an Agile environment, contributing to feature planning, sprint reviews, and code optimization for scalability and maintainability.",
+        "Built an AI-powered enterprise assistant using RAG pipelines to query 1000+ tenant documents, with an MCP server enabling natural language commands to trigger Nanoheal automation APIs.",
+        "Led development of CRCL, a multi-tenant knowledge platform with topic-based vaults and automated ingestion of documents, links, and enterprise content.",
+        "Implemented core Resolv ticket features—end-to-end creation workflows, Kanban boards, sprint planning, and a timeline view mapping tickets across sprints.",
+        "Designed Google Drive and OneDrive ingestion pipelines where scheduled crawlers chunk and vectorize new documents for enterprise search and AI assistants.",
       ],
       icon: '/assets/nanoheal_logo.jpeg',
       animation: 'victory',
